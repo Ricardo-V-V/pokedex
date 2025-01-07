@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	font-family: $primary-font;
+	color: $color-font;
+}
+
+body {
+	margin: 0;
+	overflow: auto;
+	background-color: $color-grey-light;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+a {
+	//color: $color-primary-dark;
+	font-weight: 500;
+	transition: color 0.25s ease-in-out;
+	&:hover {
+		text-decoration: none;
+		font-weight: 400;
+	}
+}
