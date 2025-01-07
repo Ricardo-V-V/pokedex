@@ -1,9 +1,12 @@
 import { Outlet } from 'react-router-dom'
+import Navbar from './Navbar'
 
 export default function MainLayout() {
 	return (
 		<>
-			<h1>Aqui va el header</h1>
+			<header>
+				<Navbar />
+			</header>
 			<Outlet />
 			<p>Footer</p>
 		</>
