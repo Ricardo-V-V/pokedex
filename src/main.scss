@@ -1,3 +1,8 @@
 @import './sass/abstracts/variables';
 
 @import './sass/base/reset';
+@import './sass/base/utilities';
+@import './sass/base/typography';
+
+@import './sass/components/Navbar';
+@import './sass/components/SearchFilter';

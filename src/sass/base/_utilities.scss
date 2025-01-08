@@ -1,0 +1,10 @@
+@use '../abstracts/mixins' as a;
+
+.px-1 {
+	padding-left: 12px;
+	padding-right: 12px;
+	@include a.breakpoint(sm) {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+}

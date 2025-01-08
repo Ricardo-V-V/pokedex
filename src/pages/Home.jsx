@@ -1,3 +1,10 @@
+import SearchFilter from '../components/SearchFilter'
+
 export default function Home() {
-	return <h1>Home Page</h1>
+	return (
+		<main className='px-1'>
+			<h1>Pokédex</h1>
+			<SearchFilter />
+		</main>
+	)
 }

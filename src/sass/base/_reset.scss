@@ -8,13 +8,12 @@ html {
 *::after {
 	box-sizing: inherit;
 	font-family: $primary-font;
-	color: $color-font;
 }
 
 body {
 	margin: 0;
 	overflow: auto;
-	background-color: $color-grey-light;
+	background-color: $color-white;
 }
 
 p {
@@ -25,7 +24,7 @@ p {
 a {
 	//color: $color-primary-dark;
 	font-weight: 500;
-	transition: color 0.25s ease-in-out;
+	transition: color 0.2s ease-in-out;
 	&:hover {
 		text-decoration: none;
 		font-weight: 400;

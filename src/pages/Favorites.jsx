@@ -1,3 +1,7 @@
 export default function Favorites() {
-	return <h1>Favorites Page</h1>
+	return (
+		<main className='px-1'>
+			<h1>My Favorites</h1>
+		</main>
+	)
 }

@@ -1,0 +1,8 @@
+@use '../abstracts/mixins' as a;
+
+h2 {
+	font-size: 1.25rem;
+	@include a.breakpoint(xsm) {
+		font-size: 1.5rem;
+	}
+}
