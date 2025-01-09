@@ -1,0 +1,23 @@
+.footer {
+	margin-top: auto;
+	&-icons {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+
+		& a {
+			color: $color-font-light;
+			&:hover {
+				color: $color-font;
+			}
+		}
+	}
+
+	&-copyright {
+		color: $color-font-light;
+		margin: 0;
+		padding: 25px 0;
+		text-align: center;
+		font-weight: 500;
+	}
+}

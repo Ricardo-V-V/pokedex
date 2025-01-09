@@ -16,6 +16,12 @@ body {
 	background-color: $color-white;
 }
 
+#root {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
 p {
 	margin-top: 0;
 	margin-bottom: 1rem;
