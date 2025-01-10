@@ -1,0 +1,112 @@
+@use '../abstracts/mixins' as a;
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.875rem;
+	padding: 3rem 0;
+
+	@include a.breakpoint(lg) {
+		gap: 1.5rem;
+		justify-content: flex-start;
+	}
+}
+
+.card {
+	color: $color-white;
+	border-radius: 16px;
+	padding: 10px 10px 0 10px;
+	width: 10.5rem;
+	cursor: pointer;
+
+	&-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		height: 24px;
+
+		& h5 {
+			margin: 0;
+			font-size: 1.25rem;
+			font-weight: 500;
+			align-self: flex-end;
+		}
+	}
+
+	&-body {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		margin: 10px 0;
+	}
+
+	&-img {
+		max-width: 120px;
+		align-self: flex-end;
+	}
+
+	&-pills {
+		display: flex;
+		flex-direction: column;
+		gap: 6px;
+	}
+
+	&-pill {
+		background: rgba(255, 255, 255, 0.3);
+		padding: 4px 14px;
+		border-radius: 14px;
+		font-size: 1rem;
+		text-align: center;
+	}
+
+	&--grass {
+		background-color: $color-grass;
+	}
+
+	&--poison {
+		background-color: $color-poison;
+	}
+	&--fire {
+		background-color: $color-fire;
+	}
+	&--water {
+		background-color: $color-water;
+	}
+	&--bug {
+		background-color: $color-bug;
+	}
+	&--water {
+		background-color: $color-water;
+	}
+	&--normal {
+		background-color: $color-normal;
+	}
+	&--electric {
+		background-color: $color-electric;
+	}
+	&--fairy {
+		background-color: $color-fairy;
+	}
+	&--fighting {
+		background-color: $color-fighting;
+	}
+	&--psychic {
+		background-color: $color-psychic;
+	}
+	&--rock {
+		background-color: $color-rock;
+	}
+	&--steel {
+		background-color: $color-steel;
+	}
+	&--ghost {
+		background-color: $color-ghost;
+	}
+	&--ice {
+		background-color: $color-ice;
+	}
+	&--dragon {
+		background-color: $color-dragon;
+	}
+}

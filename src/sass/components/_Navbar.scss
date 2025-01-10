@@ -14,20 +14,12 @@
 	}
 
 	&-link {
-		flex-grow: 2;
-		text-align: center;
-		order: 3;
 		font-size: 1.125rem;
 
 		&:hover {
 			text-decoration: underline;
 			color: $color-primary;
 			font-weight: 500;
-		}
-
-		@include a.breakpoint(xsm) {
-			text-align: left;
-			order: 0;
 		}
 	}
 
@@ -48,8 +40,12 @@
 	border: none;
 	border-radius: 50%;
 	padding: 10px;
+	display: none;
 	cursor: pointer;
 	&:hover {
 		background-color: $color-grey-light;
+	}
+	@include a.breakpoint(xsm) {
+		display: block;
 	}
 }
