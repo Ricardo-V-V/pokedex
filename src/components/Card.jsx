@@ -1,13 +1,13 @@
 import CardPill from './CardPill'
 
 export default function Card({
-	id = 11,
+	id = 0,
 	name = 'Nombre',
-	types = ['test1', 'test2'],
+	types = ['tipo1', 'tipo2'],
 }) {
 	const typeList = types.map(item => <CardPill key={item} type={item} />)
 
-	const typeColor = 'fire'
+	const typeColor = types[0]
 
 	return (
 		<>
@@ -21,7 +21,7 @@ export default function Card({
 					<div className='card-img'>
 						<img
 							alt={name}
-							src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png`}
+							src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`}
 						/>
 					</div>
 				</div>

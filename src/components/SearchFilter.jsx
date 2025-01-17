@@ -1,6 +1,8 @@
 import SearchIcon from '@mui/icons-material/Search'
+//import { useState } from 'react'
 
 export default function SearchFilter() {
+	//const [searchText, setSearchText] = useState('Hola')
 	return (
 		<div className='searchfilter'>
 			<h2>What Pokemon are you looking for?</h2>
@@ -11,7 +13,6 @@ export default function SearchFilter() {
 					placeholder='Search Pokemon, type or number'
 					maxLength='64'
 					type='search'
-					value=''
 				/>
 			</form>
 		</div>
