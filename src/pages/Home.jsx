@@ -5,7 +5,7 @@ import { useQuery } from 'urql'
 
 const POKEMONS_QUERY = `
 			 {
-				pokemon_v2_pokemon(limit: 20) {
+				pokemon_v2_pokemon(limit: 50) {
 					id
 					name
 					pokemon_v2_pokemontypes {
