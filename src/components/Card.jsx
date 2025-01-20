@@ -1,17 +1,18 @@
-import CardPill from './CardPill'
+import { Link } from 'react-router-dom'
+import Pill from './Pill'
 
 export default function Card({
 	id = 0,
 	name = 'Nombre',
 	types = ['tipo1', 'tipo2'],
 }) {
-	const typeList = types.map(item => <CardPill key={item} type={item} />)
+	const typeList = types.map(item => <Pill key={item} type={item} />)
 
 	const typeColor = types[0]
 
 	return (
-		<>
-			<div className={`card card--${typeColor}`}>
+		<Link className='card-link' to={`/details/${id}`}>
+			<div className={`card background--${typeColor}`}>
 				<div className='card-header'>
 					<h5>{name}</h5>
 					<span>#{id}</span>
@@ -26,6 +27,6 @@ export default function Card({
 					</div>
 				</div>
 			</div>
-		</>
+		</Link>
 	)
 }

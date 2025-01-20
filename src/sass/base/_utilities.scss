@@ -8,3 +8,65 @@
 		padding-right: 24px;
 	}
 }
+
+.pill {
+	background: rgba(255, 255, 255, 0.3);
+	padding: 4px 14px;
+	border-radius: 14px;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.background {
+	&--grass {
+		background-color: $color-grass;
+	}
+	&--ground {
+		background-color: $color-ground;
+	}
+	&--poison {
+		background-color: $color-poison;
+	}
+	&--fire {
+		background-color: $color-fire;
+	}
+	&--water {
+		background-color: $color-water;
+	}
+	&--bug {
+		background-color: $color-bug;
+	}
+	&--water {
+		background-color: $color-water;
+	}
+	&--normal {
+		background-color: $color-normal;
+	}
+	&--electric {
+		background-color: $color-electric;
+	}
+	&--fairy {
+		background-color: $color-fairy;
+	}
+	&--fighting {
+		background-color: $color-fighting;
+	}
+	&--psychic {
+		background-color: $color-psychic;
+	}
+	&--rock {
+		background-color: $color-rock;
+	}
+	&--steel {
+		background-color: $color-steel;
+	}
+	&--ghost {
+		background-color: $color-ghost;
+	}
+	&--ice {
+		background-color: $color-ice;
+	}
+	&--dragon {
+		background-color: $color-dragon;
+	}
+}
