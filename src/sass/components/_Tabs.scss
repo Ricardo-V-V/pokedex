@@ -1,0 +1,40 @@
+@use '../abstracts/mixins' as a;
+
+.tabs {
+	background-color: $color-white;
+	border-radius: 32px 32px 0 0;
+	padding: 48px 24px;
+
+	&-nav {
+		list-style-type: none;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		padding: 1.5rem 0;
+		margin: 0;
+		border-bottom: 1px solid $color-grey-light;
+		cursor: pointer;
+		&-link {
+			color: $color-font-light;
+			@include a.breakpoint(xsm) {
+				font-size: 1.25rem;
+			}
+			&-active {
+				color: $color-font;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+.tab {
+	&-content {
+		padding-top: 1rem;
+		&-hide {
+			display: none;
+		}
+		&-show {
+			display: block;
+		}
+	}
+}

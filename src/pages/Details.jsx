@@ -1,15 +1,11 @@
 import DetailsHeader from '../components/DetailsHeader'
+import Tabs from '../components/Tabs'
+
 export default function Details() {
 	return (
 		<>
 			<DetailsHeader />
-			<div className='details-content-box'>
-				<h2>Links</h2>
-				<h2>Links</h2>
-				<h2>Links</h2>
-				<h2>Links</h2>
-				<h2>Links</h2>
-			</div>
+			<Tabs />
 		</>
 	)
 }
