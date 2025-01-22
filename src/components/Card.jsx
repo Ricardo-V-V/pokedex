@@ -1,13 +1,8 @@
 import { Link } from 'react-router-dom'
 import Pill from './Pill'
 
-export default function Card({
-	id = 0,
-	name = 'Nombre',
-	types = ['tipo1', 'tipo2'],
-}) {
+export default function Card({ id, name, types }) {
 	const typeList = types.map(item => <Pill key={item} type={item} />)
-
 	const typeColor = types[0]
 
 	return (

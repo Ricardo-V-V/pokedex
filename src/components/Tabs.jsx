@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export default function Tabs() {
+export default function Tabs({ moves }) {
 	const [toggle, setToggle] = useState(1)
 	function updateToggle(id) {
 		setToggle(id)
@@ -52,7 +52,26 @@ export default function Tabs() {
 			<div
 				className={`tab-content ${toggle === 4 ? 'tab-content-show' : 'tab-content-hide'}`}
 			>
-				<p>Soy Moves</p>
+				{moves && (
+					<table>
+						<thead>
+							<tr>
+								<th>Move</th>
+								<th>Type</th>
+								<th>Accuracy</th>
+							</tr>
+						</thead>
+						<tbody>
+							{moves.map(move => (
+								<tr key={move.name}>
+									<td>{move.name}</td>
+									<td>{move.type}</td>
+									<td>{move.accuracy || '—'}</td>
+								</tr>
+							))}
+						</tbody>
+					</table>
+				)}
 			</div>
 		</div>
 	)

@@ -1,14 +1,12 @@
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import Pill from '../components/Pill'
 
-export default function DetailsHeader({
-	id = 1,
-	name = 'Nombre',
-	types = ['fire', 'grass'],
-}) {
+export default function DetailsHeader({ id, name, types }) {
 	const typeList = types.map(item => <Pill key={item} type={item} />)
+	const typeColor = types[0]
+
 	return (
-		<div className='details-header background--fire'>
+		<div className={`details-header background--${typeColor}`}>
 			<div className='details-title'>
 				<h1>
 					{name} #{id}
